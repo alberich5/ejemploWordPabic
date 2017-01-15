@@ -20,4 +20,13 @@ $templateWord->setValue('nombre',$nombre);
 $templateWord->setValue('edad',$edad);
 $templateWord->setValue('direccion',$direccion);
 $templateWord->setValue('estado',$estado_civil);
+
+
+// --- Guardamos el documento
+$templateWord->saveAs('Contrato.docx');
+//agregamos la cabecera para descargar el documentos desde php
+header("Content-Disposition: attachment; filename=Contrato.docx; charset=iso-8859-1");
+echo file_get_contents('Contrato.docx');
+
+
 ?>
