@@ -15,4 +15,9 @@ $direccion = "LOS MOCHIS SINALOA";
 $estado_civil="soltero"
 
 
- ?>
+// --- Asignamos valores a la plantilla
+$templateWord->setValue('nombre',$nombre);
+$templateWord->setValue('edad',$edad);
+$templateWord->setValue('direccion',$direccion);
+$templateWord->setValue('estado',$estado_civil);
+?>
