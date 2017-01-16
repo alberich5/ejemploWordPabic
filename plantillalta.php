@@ -25,10 +25,10 @@ $templateWord->setValue('fecha',$fecha);
 
 
 // --- Guardamos el documento
-$templateWord->saveAs('Contrato.docx');
+$templateWord->saveAs('ContratoAlta.docx');
 //agregamos la cabecera para descargar el documentos desde php
-header("Content-Disposition: attachment; filename=Contrato.docx; charset=iso-8859-1");
-echo file_get_contents('Contrato.docx');
+header("Content-Disposition: attachment; filename=ContratoAlta.docx; charset=iso-8859-1");
+echo file_get_contents('ContratoAlta.docx');
 
 
 ?>
