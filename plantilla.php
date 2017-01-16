@@ -21,6 +21,7 @@ $templateWord->setValue('nombre',$nombre);
 $templateWord->setValue('edad',$edad);
 $templateWord->setValue('direccion',$direccion);
 $templateWord->setValue('estado',$estado_civil);
+//variables
 
 
 // --- Guardamos el documento
